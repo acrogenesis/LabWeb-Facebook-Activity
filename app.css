@@ -3,6 +3,12 @@ body {
   background-color: #e9eaed;
 }
 
+a {
+  color: #3b5998;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .blueheader {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABUCAMAAACfvxb8AAAAeFBMVEVOaaJMZ6FIZJ89W5lBXps8WplDYJxNaKFKZqBGYp5HY54/XJpCX5xFYZ07WZg+XJpLZqBAXZtJZZ9EYZ1NaKI8Wpg9WplMaKFNaaJJZJ9LZ6FEYJ1FYp1DX5xAXptJZaBAXZo+W5k+W5pKZaBGY55LZ6A8WZg/XZpJqQD4AAAAVklEQVR4Xk3CBQoDABADwU3d3d37/x8WAqEHI/jboZV1Y2sqDuiNZtaLJ7qihe1RoxjEC/XjhMaxtCPqxBmNolVc0Nxu6IuGMbUHuqNmsbF2rO2DJhg/RwEE6AR0V3kAAAAASUVORK5CYII=);
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52);
@@ -94,7 +100,7 @@ body {
   line-height: 27px;
   margin-top: 8px;
 }
-.me_small {
+.small-me {
   border: 0;
   border-radius: 0;
   height: 19px;
@@ -102,7 +108,7 @@ body {
   width: 19px;
 }
 
-.gray_bar {
+.gray-bar {
   margin-top: -3px;
   background-color: rgb(246, 247, 248);
   border-bottom-left-radius: 3px;
@@ -161,4 +167,33 @@ body {
   height: 22px;
   line-height: 22px;
   padding: 0 16px;
+}
+
+.message {
+  background: #fff;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 3px;
+  margin-top:	20px;
+  padding: 15px;
+}
+
+.message-header {
+  height: 50px;
+}
+
+.message-me {
+  width: 40px;
+}
+
+.message-name {
+  font-weight:bold;
+}
+
+.message-content {
+  margin-bottom: 15px;
+}
+
+.message-links {
+  font-size: 12px;
 }
