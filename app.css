@@ -1,3 +1,7 @@
+body {
+  font-family:Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif
+}
+
 .blueheader {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABUCAMAAACfvxb8AAAAeFBMVEVOaaJMZ6FIZJ89W5lBXps8WplDYJxNaKFKZqBGYp5HY54/XJpCX5xFYZ07WZg+XJpLZqBAXZtJZZ9EYZ1NaKI8Wpg9WplMaKFNaaJJZJ9LZ6FEYJ1FYp1DX5xAXptJZaBAXZo+W5k+W5pKZaBGY55LZ6A8WZg/XZpJqQD4AAAAVklEQVR4Xk3CBQoDABADwU3d3d37/x8WAqEHI/jboZV1Y2sqDuiNZtaLJ7qihe1RoxjEC/XjhMaxtCPqxBmNolVc0Nxu6IuGMbUHuqNmsbF2rO2DJhg/RwEE6AR0V3kAAAAASUVORK5CYII=);
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52);
@@ -57,4 +61,20 @@ z-index: 5;
   width:960px;
   margin-left: 133px;
   margin-right: 133px;
+}
+
+.main-container {
+  padding-top: 48px;
+  margin: 0 auto;
+  width:960px;
+  margin-left: 133px;
+  margin-right: 133px;
+}
+
+.mind {
+  width: 100%;
+  min-height:63px;
+  padding: 8px 7px 0 7px;
+  font-size: 14px;
+  line-height: 18px;
 }
