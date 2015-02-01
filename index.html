@@ -3,6 +3,7 @@
   <head>
     <title>Facebook</title>
     <link rel="stylesheet" href="app.css" media="screen">
+    <meta charset="utf-8">
   </head>
   <body>
     <header class="blueheader">
@@ -10,10 +11,20 @@
         <div class="logo">
           <a href="#"></a>
         </div>
+        <div class="profile">
+          <img class="me_small" src="me_small.jpg" alt="" />
+          <span style="vertical-align: top;">Adrián Rangel</span>
+        </div>
       </div>
     </header>
     <div class="main-container">
-      <textarea class="mind" id="mind" rows="8" cols="40" placeholder="What's on your mind?"></textarea>
+      <div class="update_status">
+        <textarea class="mind" id="mind" placeholder="What's on your mind?"></textarea>
+        <div class="gray_bar">
+          <button class="post" name="Post">Post</button>
+        </div>
+      </div>
+
     </div>
 
   </body>

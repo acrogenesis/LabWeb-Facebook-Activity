@@ -1,5 +1,6 @@
 body {
-  font-family:Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif
+  font-family:Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+  background-color: #e9eaed;
 }
 
 .blueheader {
@@ -34,11 +35,11 @@ body {
 
 .logo {
   float: left;
-margin-left: -8px;
-margin-top: 2px;
-padding-right: 1px;
-position: absolute;
-z-index: 5;
+  margin-left: -8px;
+  margin-top: 2px;
+  padding-right: 1px;
+  position: absolute;
+  z-index: 5;
 }
 
 .logo a {
@@ -77,4 +78,87 @@ z-index: 5;
   padding: 8px 7px 0 7px;
   font-size: 14px;
   line-height: 18px;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.profile {
+  float: right;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 27px;
+  line-height: 27px;
+  margin-top: 8px;
+}
+.me_small {
+  border: 0;
+  border-radius: 0;
+  height: 19px;
+  margin: 4px 0 0;
+  width: 19px;
+}
+
+.gray_bar {
+  margin-top: -3px;
+  background-color: rgb(246, 247, 248);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-color: rgb(233, 234, 237);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(20, 24, 35);
+  direction: ltr;
+  display: block;
+  font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+  font-size: 12px;
+  height: 40px;
+  line-height: 15px;
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+}
+.clearfix::after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.post::before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.post {
+  float: right;
+  margin: 7px;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('button.png');
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  background-position: 0 -335px;
+  border-bottom-color: rgb(51, 76, 131);
+  border-left-color: rgb(60, 84, 136);
+  border-right-color: rgb(60, 84, 136);
+  border-top-color: rgb(67, 90, 139);
+  box-sizing: content-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 16px;
 }
