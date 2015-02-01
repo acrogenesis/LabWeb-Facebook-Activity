@@ -27,14 +27,18 @@ function createPost(message){
   '</div>';
   messageContainer = document.getElementById('messages-container');
   messageContainer.innerHTML = content + messageContainer.innerHTML;
-
+  like_handlers();
 }
 
-function handlers(){
-  var like_links = document.getElementsByClassName('like');
+function like_handlers(){
+  like_links = document.getElementsByClassName('like');
   for (var i = 0; i < like_links.length; i++) {
     like_links[i].addEventListener('click', toggleLike, false);
   }
+}
+
+function handlers(){
+  like_handlers();
   document.getElementById('post').addEventListener('click', newPost, false);
 }
 
