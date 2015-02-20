@@ -12,6 +12,22 @@ function newPost(){
   textA.value = '';
 }
 
+function sendPost(message)
+{
+  var xmlhttp;
+  xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      console.log(xmlhttp.responseText);
+    }
+  };
+  xmlhttp.open("POST","server.php",true);
+  xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+  xmlhttp.send("message="+message+"&author=Adrian Rangel");
+}
+
 function createPost(message){
   content = '<div class="message">' +
     '<div class="message-header">' +
@@ -25,6 +41,7 @@ function createPost(message){
       '<a href="#" title="Like this" class="like">Like</a> · <a href="#" title="Leave a comment">Comment</a> · <a href="#" title="Send this to friends or post it on your timeline.">Share</a>' +
     '</div>' +
   '</div>';
+  sendPost(message);
   messageContainer = document.getElementById('messages-container');
   messageContainer.innerHTML = content + messageContainer.innerHTML;
   like_handlers();
