@@ -50,8 +50,8 @@ function sendPost(message, id, like, date)
       messageContainer = document.getElementById('messages-container');
       messageContainer.innerHTML = content + messageContainer.innerHTML;
       like_handlers();
-    } else {
-      alert('501. Error no se pudo enviar tu mensaje intenta de nuevo.')
+    } else if (xmlhttp.status==501) {
+      alert('501. Error no se pudo enviar tu mensaje intenta de nuevo.');
     }
   };
   xmlhttp.open("POST", "post.php", true);
