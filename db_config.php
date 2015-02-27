@@ -5,10 +5,11 @@ $password = "";
 $db_name = "facebook";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $db_name);
+$conn = @new mysqli($servername, $username, $password, $db_name);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+  http_response_code(503);
+  die(json_encode(['error' => 503]));
 }
 ?>
